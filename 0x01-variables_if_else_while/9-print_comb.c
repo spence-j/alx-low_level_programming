@@ -1,24 +1,23 @@
-include <stdio.h>
+#include <stdio.h>
 
 /**
- * * main - Print all possible combinations of single digit numbers
- * *
- * * Return: Always 0 (Success)
- * */
+ *  * main - a simple program that outputs 0-9 separated by commas
+ *   *
+ *    * Return: 0 on success
+ *     */
 int main(void)
 {
-			int number;
+		int i;
 
-					for (number = 0; number <= 9; number++)
-								{
-											putchar(number + '0');
-													if (number < 9)
-																{
-																			putchar(',');
-																					putchar(' ');
-																							}
-															}
-							putchar('\n');
-
-								return (0);
+			for (i = 48; i < 58; i++)
+					{
+								putchar(i);
+										if (i != 57)
+													{
+																	putchar(',');
+																				putchar(' ');
+																						}
+											}
+				putchar('\n');
+					return (0);
 }
